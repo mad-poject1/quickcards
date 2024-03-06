@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
                 'Quick',
                 style: TextStyle(
                   fontSize: 40,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.normal,
                   color: Color.fromARGB(255, 255, 113, 103),
                 ),
               ),
@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                 'Cards',
                 style: TextStyle(
                   fontSize: 40,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.normal,
                   color: Color.fromARGB(255, 90, 181, 255),
                 ),
               ),
