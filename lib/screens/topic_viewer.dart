@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'flashcard_details.dart';
 import '../models/topic.dart';
 
 class TopicViewer extends StatefulWidget {
@@ -41,7 +42,13 @@ class _TopicViewerState extends State<TopicViewer> {
             ),
             child: InkWell(
               onTap: () {
-                // TODO: Navigate to first flashcard of the topic
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FlashcardDetails(
+                        topicId: topic.id, topicTitle: topic.title),
+                  ),
+                );
               },
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
