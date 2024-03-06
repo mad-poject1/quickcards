@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
-// import './screens/topic_viewer.dart';
-// import './screens/flashcard_creator.dart';
-// import './widgets/quiz_game.dart';
 
 void main() {
   runApp(const QuickCards());

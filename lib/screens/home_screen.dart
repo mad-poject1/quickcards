@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'topic_viewer.dart';
+// import 'flashcard_creator.dart';
+// import 'quiz_game.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,10 +48,12 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 30),
           MenuButton(
             title: 'Topic Viewer',
-            color: const Color.fromARGB(255, 255, 232,
-                194)!, // Use the '!' to assert that the color is not null
+            color: const Color.fromARGB(255, 255, 232, 194),
             onPressed: () {
-              // TODO: Implement Topic Viewer Navigation
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const TopicViewer()),
+              );
             },
           ),
           MenuButton(
